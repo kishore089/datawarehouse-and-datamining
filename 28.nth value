@@ -1,0 +1,7 @@
+a<- c(1000,3000,4000)
+
+x = readline();
+
+x = as.integer(x);
+
+print(sort(a,TRUE)[x])

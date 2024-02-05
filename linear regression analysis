@@ -1,0 +1,6 @@
+diabetes<-read.csv("diabetes.csv",header=TRUE,sep=",")
+x<-c(diabetes $age)
+y<-c(diabetes $insulin)
+relation<-lm(x~y)
+plot(x,y,col="blue",main="linear regression analysis",
+     abline=(lm(y~x)),xlab="BloodPressure",ylab="Age")

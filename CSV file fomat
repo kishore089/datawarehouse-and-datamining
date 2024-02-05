@@ -1,0 +1,79 @@
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     employe
+Instances:    6
+Attributes:   5
+              Employe ID
+              Gender
+              Age
+              Salary
+              Credit
+Test mode:    split 80% train, remainder test
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 2
+Within cluster sum of squared errors: 2.9514403292181073
+
+Initial starting points (random):
+
+Cluster 0: 444,female,25,160000,40
+Cluster 1: 111,male,28,150000,39
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                            Cluster#
+Attribute      Full Data           0           1
+                   (6.0)       (3.0)       (3.0)
+================================================
+Employe ID         388.5         444         333
+Gender              male      female        male
+Age              27.1667          27     27.3333
+Salary            165000 163333.3333 166666.6667
+Credit           47.3333     48.6667          46
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on test split ===
+
+kMeans
+======
+
+Number of iterations: 2
+Within cluster sum of squared errors: 1.01061449963477
+
+Initial starting points (random):
+
+Cluster 0: 111,male,28,150000,39
+Cluster 1: 555,female,30,170000,64
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                            Cluster#
+Attribute      Full Data           0           1
+                   (4.0)       (2.0)       (2.0)
+================================================
+Employe ID        305.25       166.5         444
+Gender              male        male      female
+Age                27.25        26.5          28
+Salary            157500      150000      165000
+Credit                43          33          53
+
+
+
+
+Time taken to build model (percentage split) : 0.01 seconds
+
+Clustered Instances
+
+1      2 (100%)

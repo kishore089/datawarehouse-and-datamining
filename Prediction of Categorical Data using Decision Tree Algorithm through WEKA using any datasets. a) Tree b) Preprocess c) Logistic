@@ -1,0 +1,34 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     PURU
+Instances:    5
+Attributes:   2
+              TID
+              item set
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+TID = T1 : M.O.N.K.E.Y
+TID != T1 : D,O,N,K,E,Y
+TID is missing : M.O.N.K.E.Y
+
+Class distributions
+
+TID = T1
+M.O.N.K.E.Y	D,O,N,K,E,Y	M,A,K,E	M,U,C,K,Y	C,O,O,K,I,E	
+1.0	0.0	0.0	0.0	0.0	
+TID != T1
+M.O.N.K.E.Y	D,O,N,K,E,Y	M,A,K,E	M,U,C,K,Y	C,O,O,K,I,E	
+0.0	0.25	0.25	0.25	0.25	
+TID is missing
+M.O.N.K.E.Y	D,O,N,K,E,Y	M,A,K,E	M,U,C,K,Y	C,O,O,K,I,E	
+0.2	0.2	0.2	0.2	0.2	
+
+
+Time taken to build model: 0 seconds

@@ -1,0 +1,3 @@
+Data=read.csv(“C:/users/prasanthiemani/Desktop/2015.csv”)
+⦁	View(Data)
+⦁	a = apriori(data, parameter = list(sup=0.3, conf=0.9)
